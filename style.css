@@ -16,10 +16,11 @@ img{
     background-color: #161616;
     border-radius: 20px;
     position: relative;
-    transition: height 8s;
+    transition: margin-right 8s;
 }
-.banner:hover .banner-right img{
-    width: 85%;
+.banner:hover >.banner-right img{
+    transform: scale(0.8) rotate(10deg);
+    transition: transform 1s ease-in;
 }
 .banner-left{
     width: 50%;
@@ -63,11 +64,12 @@ img{
     font-size: 18px;
     margin-top: 20px;
     border-radius: 6px;
-    transition: margin-right 2s;
+    transition: 0.3s;
     
 }
 .default-btn:hover{
     width: 250px;
+    transition: width 1s ease-in;
     background-color: #DD0000;
     color: #fff;
 }
